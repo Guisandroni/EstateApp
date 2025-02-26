@@ -18,9 +18,9 @@ if(  !loading && isLoggedIn){
       const result = await Login()
 
       if(result){
-        refetch
+        refetch()
       }else{
-        Alert.alert('Error', 'failed to login')
+        Alert.alert("Error", "Failed to login");
       }
       // result? refetch : Alert.alert('Error', 'failed to login')
   }
@@ -39,17 +39,17 @@ if(  !loading && isLoggedIn){
             Welcome a App State
           </Text>
 
-          <Text className='text-3xl font-rubik-bold text-black-300 text-center mt-2'>
+          <Text className='mt-2 text-3xl text-center font-rubik-bold text-black-300'>
             Let's Get Your Closer to {'\n'}
             <Text className='text-primary-300'> Your Ideal Home</Text>
           </Text>
 
-          <Text className='text-lg font-rubik text-black-200 text-center mt-12'>
+          <Text className='mt-12 text-lg text-center font-rubik text-black-200'>
             Login to State App with Google
           </Text>
 
           <TouchableOpacity onPress={handleClickLogin}
-            className='bg-white shadow-xl shadow-zinc-600 rounded-full w-full py-4 mt-5'
+            className='w-full py-4 mt-5 bg-white rounded-full shadow-xl shadow-zinc-600'
           >
             <View className='flex flex-row items-center justify-center gap-2'>
               <Image source={icons.google}
@@ -57,7 +57,7 @@ if(  !loading && isLoggedIn){
                 resizeMode='contain'
                 />
               <Text 
-                className='text-lg font-rubik-bold text-black-300 ml-2'
+                className='ml-2 text-lg font-rubik-bold text-black-300'
               >Continue With Google</Text>
             </View>
           </TouchableOpacity>

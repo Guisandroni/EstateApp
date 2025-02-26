@@ -30,7 +30,7 @@ export default function RootLayout() {
     <GlobalProvider>
 
       <Stack screenOptions={{
-        headerShown: true,
+        headerShown: false,
         title: ""
       }} />
     </GlobalProvider>

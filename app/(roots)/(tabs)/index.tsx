@@ -12,15 +12,9 @@ export default function Index() {
 
       className="gap-10"
     >
-      <Text className="text-lg font-bold text-green-500">nativewild</Text>
-      <Text className="text-lg font-bold text-purple-500">nativewild</Text>
+      <Text className="text-2xl font-bold">Welcome StateApp</Text>
+      
 
-      <Text className="text-lg font-bold text-red-500 ">nativewild</Text>
-
-      <Link href='/SignIn'>sign</Link>
-      <Link href='/Profile'>profile</Link>
-      <Link href='/Explorer'>explorer</Link>
-      <Link href='/properties/1'>explorer</Link>
 
 
     </View>
