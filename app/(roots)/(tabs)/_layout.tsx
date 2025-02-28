@@ -16,7 +16,7 @@ const TabsLayout = ({ focused, icon, title }: TypeTabs) => {
                 tabBarStyle: {
                     backgroundColor: 'white',
                     position: 'absolute',
-                    borderTopColor: '#000',
+                    borderTopColor: '#f0f0f2',
                     borderTopWidth: 1,
                     minHeight: 70,
                 }
@@ -33,6 +33,20 @@ const TabsLayout = ({ focused, icon, title }: TypeTabs) => {
                 }}
             />
 
+
+
+
+            <Tabs.Screen
+                name='Explorer'
+                options={{
+                    title: 'Explorer',
+                    
+                    tabBarIcon: ({ focused }) => (
+                        <NavigatorTabs icon={icons.search} focused={focused} title='Explorer' />
+                    )
+                }}
+            />
+
             <Tabs.Screen
                 name='Profile'
                 options={{
@@ -42,18 +56,6 @@ const TabsLayout = ({ focused, icon, title }: TypeTabs) => {
                     )
                 }}
             />
-
-            
-<Tabs.Screen
-                name='Explorer'
-                options={{
-                    title: 'Explorer',
-                    tabBarIcon: ({ focused }) => (
-                        <NavigatorTabs icon={icons.search} focused={focused} title='Explorer' />
-                    )
-                }}
-            />
-
         </Tabs>
     )
 }
